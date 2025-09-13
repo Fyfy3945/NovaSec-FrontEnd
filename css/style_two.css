@@ -15,6 +15,7 @@ body {
 /* Zone de messages */
 #messages {
   height: 300px;
+  width: 500px;
   border: 1px solid #ccc;
   padding: 10px;
   overflow-y: auto;
@@ -115,4 +116,5 @@ svg {
 
 .interactive:hover {
   fill: #55ffbb3d;
+
 }
