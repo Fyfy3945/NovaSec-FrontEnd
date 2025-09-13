@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Map G.N.D Corporation</title>
+  <link rel="stylesheet" href="../css/style_two.css">
+</head>
+
+<body>
+<h2>Carte interactive des bâtiments</h2>
+
+<svg viewBox="0 0 1000 1500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Image de fond -->
+  <image href="picture/plan_G.N.D.jpg" x="0" y="0" width="1000" height="1500"/>
+
+  <!-- Bâtiments rectangles simples -->
+  <rect class="interactive" x="81" y="71" width="825" height="150" onclick="window.location.href = 'buildings/login/login.html';"></rect>
+  <rect class="interactive" x="306" y="530" width="380" height="150" onclick="window.location.href = 'buildings/login/login.html';"></rect>
+  <rect class="interactive" x="789" y="754" width="160" height="460" onclick="window.location.href = 'buildings/login/login.html';"></rect>
+  <rect class="interactive" x="465" y="1288" width="435" height="150" onclick="window.location.href = 'buildings/login/login.html';"></rect>
+
+  <!-- Bâtiments en L / polygones -->
+  <polygon class="interactive" points="77 299,373 299,373 453,223 453,223 676, 77 676" onclick="window.location.href = 'buildings/login/login.html';"></polygon>
+  <polygon class="interactive" points="611 296, 913 296, 913 674, 759 674, 759 453, 611 453" onclick="window.location.href = 'buildings/login/login.html';"></polygon>
+  <polygon class="interactive" points="48 1143, 233 1143, 233 1287, 375 1287, 375 1429, 48 1429" onclick="window.location.href = 'buildings/login/login.html'"></polygon>
+
+  <!-- Bâtiment hexagonal E -->
+  <polygon class="interactive" points="489 715, 739 840, 739 1088, 489 1212, 238 1088, 238 840"
+           onclick="window.location.href = 'buildings/login/login.html'"></polygon>
+</svg>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Styles généraux */
+body {
+  font-family: Consolas, monospace; /* Priorité donnée au second code */
+  background: #0a0a0a;
+  color: #00ff99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Zone de messages */
+#messages {
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  color: #000; /* Pour garder la lisibilité sur fond clair */
+}
+
+.msg {
+  margin: 5px 0;
+}
+
+.me {
+  color: blue;
+}
+
+.other {
+  color: green;
+}
+
+/* Zone d’entrée */
+#inputZone {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+#msgInput {
+  flex: 1;
+  padding: 8px;
+}
+
+/* Titres */
+h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #00ff99;
+  border-bottom: 2px solid #00ff99;
+  padding-bottom: 10px;
+}
+
+/* Formulaires */
+form {
+  background: #111;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ff99;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 280px;
+}
+
+input,
+select {
+  background: #000;
+  border: 1px solid #00ff99;
+  color: #00ff99;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input::placeholder {
+  color: #007755;
+}
+
+/* Boutons */
+button {
+  background: #00ff99;
+  color: #000;
+  border: none;
+  padding: 10px 12px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #00cc77;
+}
+
+/* SVG interactif */
+svg {
+  width: 600px;
+  height: auto;
+  border: 0px solid #ffffff;
+}
+
+.interactive {
+  fill: #00ff993d;
+  stroke: #017c4b;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.interactive:hover {
+  fill: #55ffbb3d;
+}
