@@ -1,5 +1,5 @@
 // Render héberge en HTTPS → donc WebSocket en WSS
-const socket = new WebSocket(`wss://${location.host}`);
+const socket = new WebSocket("https://novasec-backend.onrender.com");
 
 const messages = document.getElementById("messages");
 const nick = document.getElementById("nickname");
@@ -27,5 +27,6 @@ sendBtn.onclick = () => {
   socket.send(JSON.stringify(data));
   input.value = "";
 };
+
 
 input.addEventListener("keydown", (e) => { if (e.key === "Enter") sendBtn.click(); });
